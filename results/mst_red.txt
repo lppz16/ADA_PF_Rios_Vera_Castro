@@ -1,0 +1,42 @@
+=== MST por Kruskal ===
+Nodos: 20 | Aristas totales en grafo: 190
+Costo promedio de arista: 129.02
+
+Aristas del MST (u -- v : peso):
+  1 -- 12 : 122.00
+  12 -- 16 : 123.00
+  0 -- 12 : 124.00
+  9 -- 12 : 124.00
+  1 -- 14 : 124.00
+  1 -- 11 : 125.00
+  1 -- 7 : 125.00
+  12 -- 13 : 125.00
+  12 -- 19 : 125.00
+  1 -- 18 : 126.00
+  1 -- 3 : 126.00
+  1 -- 10 : 126.00
+  1 -- 17 : 126.00
+  1 -- 4 : 127.00
+  1 -- 2 : 127.00
+  1 -- 8 : 127.00
+  1 -- 5 : 127.00
+  1 -- 6 : 129.00
+  1 -- 15 : 130.00
+
+Peso total del MST: 2388.00
+
+=== Propiedad de elección codiciosa (Lema del ciclo) ===
+Por el Lema del ciclo: para cualquier ciclo del grafo, la arista de mayor
+peso en ese ciclo NO pertenece a ningún MST. Kruskal selecciona siempre la
+arista de menor peso que no forma ciclo con las ya elegidas.
+Ejemplo concreto: la primera arista seleccionada fue 1--12 con peso 122.00.
+Esta es la arista de menor peso en el grafo; incluirla es seguro porque
+todo MST debe contener la arista más barata de cualquier corte que la cruce.
+
+=== Verificación: subgrafo nodos 0..4 ===
+MST del subgrafo (nodos 0-4):
+  0 -- 1 : 124.00
+  1 -- 3 : 126.00
+  1 -- 4 : 127.00
+  1 -- 2 : 127.00
+Peso total subgrafo MST: 504.00

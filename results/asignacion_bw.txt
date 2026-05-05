@@ -1,0 +1,18 @@
+=== MÓDULO C: Mochila 0-1 (Programación Dinámica) ===
+Capacidad W = 500 unidades
+Items considerados (50 solicitudes activas de mayor tenure):
+
+Valor óptimo total: 0 centavos
+Número de solicitudes seleccionadas: 0
+
+customerID de solicitudes seleccionadas:
+
+=== Contraejemplo codicioso ===
+(No se encontro contraejemplo automatico con estos datos. Ver informe para ejemplo manual.)
+
+=== Análisis de complejidad ===
+Tiempo : Theta(n * W) — se recorren n items x W+1 capacidades.
+Espacio: Theta(n * W) — tabla dp de (n+1) x (W+1) enteros.
+Pseudopolinomialidad: W se trata como un entero fijo, pero su representacion
+en bits es log2(W). El algoritmo es exponencial en el tamanio de la entrada
+en sentido estricto (bits), por lo que NO es polinomial verdadero.
