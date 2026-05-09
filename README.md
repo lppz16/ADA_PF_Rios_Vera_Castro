@@ -6,7 +6,7 @@ Proyecto final de **Análisis y Diseño de Algoritmos (ADA)** aplicado sobre un 
 ## **Integrantes:**
 - Guadalupe Castro 
 - Tomas Vera
-- Frank Lopez
+- Yan Frank Ríos López
 
 | Apellido | Rol |
 |---|---|
